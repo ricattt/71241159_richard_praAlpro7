@@ -1,0 +1,9 @@
+n = int(input('Bilangan: '))
+for i in range(n,0,-1):
+    cekPrima = 0
+    for j in range(1,i+1):
+        if i % j == 0:
+            cekPrima += 1
+    if cekPrima == 2:
+        print(i)
+        break
